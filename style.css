@@ -1,0 +1,200 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: black;
+  font-family: Arial, sans-serif;
+  color: white;
+
+  /*
+  background-image: url(images/BG.jpg);
+  background-size: cover;
+  background-position: center;
+  */
+}
+
+
+.navbar {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 120px;
+}
+
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right{
+    display: flex;
+    gap: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.logo img {
+  height: 70px;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; 
+}
+
+
+.menu ul li {
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0s, color 0s;
+}
+
+
+.menu ul li:hover {
+  color: black;
+  background: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menu ul li a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.Welcome{
+    height: calc(100vh - 100px); /* chat-gpt - Aligns it exactly in the center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 150px;
+}
+
+.Welcome h1{
+    font-size: 100px;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 25px red
+}
+
+.Welcome h2{
+    font-size: 38px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-shadow: 0 0 7px white;
+}
+
+/* Styling Race now */
+
+.race-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* used chatgpt to understand how to fit it properly */
+  gap:70px;
+  padding: 40px 70px;
+  width: 100%;
+}
+
+
+.race-cards {
+  background-color: #1c1c1c;
+  border-left: 4px solid #e10600;
+  border-radius: 8px;
+  box-shadow: 0 7px 40px rgba(255, 0, 0, 0.3);
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.race-cards img {
+  height: 50%;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.race-cards h1 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.race-cards p {
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #ddd;
+  margin-bottom: 5px;
+}
+
+body.light-mode {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+body.light-mode .navbar {
+  background-color: red;
+}
+
+body.light-mode .theme {
+  border: 2px solid rgb(255, 255, 255);
+  color: black;
+}
+
+body.light-mode .Welcome h1,
+body.light-mode .Welcome h2 {
+  color: black;
+  text-shadow: none;
+}
+
+/* Styling for the TIMER */
+
+.timer {
+  background-color: black;        
+  padding: 40px; 
+  display: flex;                     
+  border-radius: 8px;               
+  box-shadow: 0 0 20px red;         
+  text-align: center; 
+  font-size: 30px;             
+  margin: 40px auto;                
+  width: fit-content;                                
+  flex-direction: column;          
+  align-items: center;             
+  color: red;
+  text-transform: uppercase;
+}
+
+.countdown {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 40px;
+  color: red;
+  text-transform: uppercase;                 
+}
+
+
+
+
